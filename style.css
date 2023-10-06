@@ -1,0 +1,119 @@
+/* Reset */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Container */
+
+.container {
+  max-width: 121.6rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 1316px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* Cores */
+
+::selection {
+  background-color: var(--preto);
+  color: var(--branco);
+}
+
+:root {
+  --preto: #000;
+  --branco: #fff;
+}
+
+.dark-mode {
+  --preto: #fff;
+  --branco: #000;
+}
+
+.preto {
+  color: var(--preto);
+}
+
+.branco {
+  color: var(--branco);
+}
+
+/* Fontes */
+
+.h1 {
+  font-family: Sora;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.h2 {
+  font-family: Sora;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.bod1 {
+  font-family: Sora;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+}
+
+.bod2 {
+  font-family: Sora;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.5%;
+}
+
+.tex-but {
+  font-family: Sora;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 139.5%;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  .flex-column {
+    flex-direction: column;
+  }
+}
